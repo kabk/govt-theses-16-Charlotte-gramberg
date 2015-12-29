@@ -53,6 +53,24 @@ margin-left: 25%;
 margin-right: 25%;
 position: fixed;
 font-family: 'Source Sans Pro', sans-serif;
+vertical-align:centre;
+}
+
+
+.intro{
+margin-top:100px;
+}
+
+ .intro intro{
+width: 100%;
+Font-size: 20rem;
+Font-weight: 600;
+}
+
+ .intro sub-intro{
+width: 100%;
+Font-size: 2rem;
+position: centre;
 }
 
 .tekst {
@@ -100,15 +118,10 @@ text-align: justify;
     text-decoration: none;
     }
 
-.cd-section .intro {
-width: 100%;
-Font-size: 1.4rem;
-position: centre;
-
-}
 
 .cd-section {
   height: 100vh;
+  vertical-align: middle;
 
 }
 .cd-section h2 {
@@ -157,15 +170,22 @@ font-style: bold;
   .cd-section h2 {
     font-size: 2rem;
     font-weight: 600;
-   }
-   
+    }
+    
+     .intro intro{
+	width: 100%;
+	Font-size: 5rem;
+	Font-weight: 300;
+	}
    
    .tekst {
     -webkit-column-count: 1; /* Chrome, Safari, Opera */
 	column-count: 1;
 	text-align: justify;
+	}
 	
-	}}
+	
+	}
 
 @media only screen and (min-width: 1050px) {
   .cd-section h2 {
@@ -215,7 +235,6 @@ font-style: bold;
     position: fixed;
     top: 0;
     bottom: 0;
-   
     /* Force Hardware Acceleration */
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
