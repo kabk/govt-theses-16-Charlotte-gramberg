@@ -53,7 +53,9 @@ margin-left: 25%;
 margin-right: 25%;
 position: fixed;
 font-family: 'Source Sans Pro', sans-serif;
-vertical-align:centre;
+ display: inline-block;
+vertical-align: middle;
+
 }
 
 
@@ -79,6 +81,7 @@ column-count: 2;
 -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
 column-gap: 40px;
 text-align: justify;
+line-height: normal;
 
 }
 
