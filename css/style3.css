@@ -12,7 +12,7 @@ html {
 }
 
 body {
-   background-color: #f9f9f9;
+   background-color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,7 +21,7 @@ body::before {
   content: 'mobile';
   display: none;
 }
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 1050px) {
   body::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
@@ -38,7 +38,7 @@ a {
 Main Components 
 
 -------------------------------- */
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 1050px) {
   body[data-hijacking="on"] {
     overflow: hidden;
   }
@@ -54,7 +54,7 @@ Main Components
   height: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffea00;
+  background: #FFDD00;
   border: 0px none #ffffff;
   border-radius: 0px;
 }
@@ -62,18 +62,18 @@ Main Components
   background: #ff2603;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #ffe700;
+  background: #FFDD00;
 }
 ::-webkit-scrollbar-track {
-  background: #f5fef2;
+  background: none;
   border: 0px none #ffffff;
   border-radius: 0px;
 }
 ::-webkit-scrollbar-track:hover {
-  background: #fafff6;
+  background: none;
 }
 ::-webkit-scrollbar-track:active {
-  background: #fbfff7;
+  background: none;
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
@@ -81,13 +81,15 @@ Main Components
 
 
 .wrap {
-height: 90%;
-width:80%;
-margin-left: 10%;
-padding:20px;
-border: 3px solid black;
+border: 1px solid black;
+height: 70%;
+width:70%;
+margin-left: 15%;
+padding-left:5%;
+padding-right:5%;
+padding-top: 5%;
+padding-bottom:20px;
 }
-
 
 .intro{
 margin-top:100px;
@@ -98,19 +100,17 @@ font-family: 'Source Sans Pro', sans-serif;
 width: 100%;
 Font-size: 20rem;
 Font-weight: 600;
-position: centre;
 }
 
-.intro sub-intro{
-font-family: 'Source Sans Pro', sans-serif;
+ .intro sub-intro{
 width: 100%;
 Font-size: 2rem;
 position: centre;
 }
 
 .tekst {
-font-size: 1.8rem;
-font-family: 'EB Garamond', serif;
+font-size: 1.4rem;
+font-family: 'Source Sans Pro', sans-serif;
 color: #000000;
 overflow-x: auto;
 height: 90%;
@@ -119,9 +119,11 @@ height: 90%;
 column-count: 2;
 -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
 column-gap: 40px;
-
+text-align: justify;
 line-height: normal;
-padding-bottom:20px;
+padding-bottom:20px
+
+
 }
 
 .navi2 {
@@ -135,7 +137,7 @@ padding-bottom:20px;
     line-height: 1.6;
     display: none;
     padding: 10px;
-    color: #FFFFFF;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -148,32 +150,34 @@ padding-bottom:20px;
 .navi2 a:hover {
 	color: #ffe100;
 	text-decoration: none;
-}
 
+}
 .navi {
     position: fixed;
     right: 50px;
     top: 4%;
     text-align: left;
     font-size: 1.1rem;
-    color: #FFFFFF;
+    color: #ffe800;
     text-decoration: none;
     }
 
 
 .cd-section {
+	padding:20px;
   height: 100vh;
   vertical-align: middle;
-}
 
+}
 .cd-section h2 {
 font-family: 'Source Sans Pro', sans-serif;
-font-weight: 600;
+font-style: bold;
 line-height: 30px;
+margin-top:30px;
 margin-bottom:30px;
-font-size: 2rem;
+text-align: center;
+font-size: 2.4rem;
 }
-
 .cd-section:first-of-type > div {
   background-color: #FFFFFF;
 }
@@ -189,32 +193,47 @@ font-size: 2rem;
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 .cd-section:nth-of-type(2) > div {
   background-color: #FFFFFF;
 }
-
 .cd-section:nth-of-type(3) > div {
   background-color: #FFFFFF;
 }
-
 .cd-section:nth-of-type(4) > div {
-  background-color: #FFFFFF;
+  background-color: #FFFF12;
 }
-
 .cd-section:nth-of-type(5) > div {
   background-color: #FFFFFF;
 }
-
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media only screen and (min-width: 250px) {
+ @media only screen and (max-width: 1200px) {
+  .cd-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    }
+    
+     .intro intro{
+	width: 100%;
+	Font-size: 5rem;
+	Font-weight: 300;
+	}
+   
+   .tekst {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+	column-count: 1;
+	text-align: justify;
+	}
 
-  }
+	
+	}
+
+@media only screen and (min-width: 1050px) {
+
   [data-hijacking="on"] .cd-section {
     opacity: 0;
     visibility: hidden;
@@ -229,34 +248,21 @@ font-size: 2rem;
   [data-hijacking="off"] .cd-section > div {
     opacity: 0;
   }
-  [data-animation="rotate"] .cd-section {
-    /* enable a 3D-space for children elements */
-    -webkit-perspective: 1800px;
-    -moz-perspective: 1800px;
-    perspective: 1800px;
-  }
-  [data-hijacking="on"][data-animation="rotate"] .cd-section:not(:first-of-type) {
-    -webkit-perspective-origin: center 0;
-    -moz-perspective-origin: center 0;
-    perspective-origin: center 0;
-  }
-  [data-animation="scaleDown"] .cd-section > div, [data-animation="gallery"] .cd-section > div, [data-animation="catch"] .cd-section > div {
-    box-shadow: 0 0 0 rgba(25, 30, 46, 0.4);
-  }
+
   [data-animation="opacity"] .cd-section.visible > div {
     z-index: 1;
   }
 }
 
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 1050px) {
   .cd-section:first-of-type > div::before {
     display: none;
   }
 }
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 1050px) {
   .cd-section > div {
     position: fixed;
-    top: 5%;
+    top: 2%;
     bottom: 0;
     /* Force Hardware Acceleration */
     -webkit-transform: translateZ(0);
@@ -270,13 +276,7 @@ font-size: 2rem;
   [data-hijacking="on"] .cd-section > div {
     position: absolute;
   }
-  [data-animation="rotate"] .cd-section > div {
-    -webkit-transform-origin: center bottom;
-    -moz-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    -o-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
+
 }
 
 .cd-vertical-nav {
@@ -319,7 +319,7 @@ font-size: 2rem;
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 1050px) {
   .cd-vertical-nav {
     display: block;
   }
