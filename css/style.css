@@ -324,3 +324,20 @@ font-size: 2rem;
     display: block;
   }
 }
+
+
+@media print only {
+.wrap {
+width:210mm;
+height:297mm;
+}
+
+.tekst {
+font-size: 10px;
+font-family: 'EB Garamond', serif;
+color: #000000;
+height: auto;
+line-height: normal;
+padding-bottom:20px;
+
+}
