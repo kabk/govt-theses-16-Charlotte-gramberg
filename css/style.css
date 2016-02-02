@@ -12,7 +12,7 @@ html {
 }
 
 body {
-   background-color: #f9f9f9;
+   background-color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -79,11 +79,8 @@ Main Components
 }
 
 .wrap {
-height: 90%;
-width:80%;
-margin-left: 10%;
-padding:20px;
-border: 3px solid black;
+height: 100%;
+width:100%;
 }
 
 .wrap img {
@@ -99,10 +96,11 @@ height: 100%
 
 .tussenkop{
 font-family: 'Source Sans Pro', sans-serif;
-width: 100%;
+margin: 10%;
 color: #FFFFFF;
 Font-size: 10rem;
 Font-weight: 600;
+line-height: normal;
 }
 
 .credits {
@@ -138,8 +136,8 @@ Font-weight: 600;
 	font-family: 'Libre Baskerville', serif;
 	display:inline;
 	cursor:pointer;
-	z-index:2;
-	
+	/* position:relative; */
+	z-index:2;	
 }
 
 .source_hover:hover:after { 
@@ -147,7 +145,7 @@ Font-weight: 600;
 	padding:5px;
 	background:#ffea00;
 	color:#000000;
-	position:absolute;
+	position:relative;
 	top:15px;
 	left:15px;
 	content: attr(data-bron); /*tekst in html!!!*/
@@ -157,8 +155,8 @@ Font-weight: 600;
 font-size: 14px;
 font-family: 'Libre Baskerville', serif;
 color: #000000;
+height: 80%;
 overflow-x: auto;
-height: 90%;
 -webkit-column-count: 2; /* Chrome, Safari, Opera */
 -webkit-column-width: 200px;
 column-count: 2;
@@ -166,56 +164,22 @@ column-count: 2;
 column-gap: 40px;
 line-height: normal;
 padding-bottom:20px;
+margin:5%;
 }
 
-.navi2 {
-    position: fixed;
-    right: 30px;
-    width: 200px;
-    top: 4.5%;
-    overflow-y: hidden;
-    text-align: right;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    display: none;
-    padding: 10px;
-    color: #FFFFFF;
-    text-decoration: none;
+.tekst h2 {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 600;
+line-height: 30px;
+margin-bottom:30px;
+width: 100%;
+font-size: 20px;
 }
-
-.navi a:hover {
-	cursor: pointer;
-	color: #ffe800;
-	text-decoration: underline;
-}
-
-.navi2 a:hover {
-	color: #ffe100;
-	text-decoration: none;
-}
-
-.navi {
-    position: fixed;
-    right: 50px;
-    top: 4%;
-    text-align: left;
-    font-size: 1.1rem;
-    color: #FFFFFF;
-    text-decoration: none;
-    }
 
 
 .cd-section {
   height: 100vh;
   vertical-align: middle;
-}
-
-.cd-section h2 {
-font-family: 'Source Sans Pro', sans-serif;
-font-weight: 600;
-line-height: 30px;
-margin-bottom:30px;
-font-size: 20px;
 }
 
 .cd-section:first-of-type > div {
@@ -225,8 +189,8 @@ font-size: 20px;
   /* alert -> all scrolling effects are not visible on small devices */
   position: fixed;
   width: 100%;
+  height: 100%
   text-align: center;
-  top: 20px;
   z-index: 2;
   font-size: 2rem;
   text-transform: uppercase;
@@ -279,8 +243,6 @@ font-size: 20px;
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 100px;
-    left: 100px;
     width: 100%;
   }
   [data-hijacking="on"] .cd-section > div {
@@ -303,7 +265,6 @@ font-size: 20px;
 @media screen and (min-width: 250px) {
   .cd-section > div {
     position: fixed;
-    top: 5%;
     bottom: 0;
     /* Force Hardware Acceleration */
     -webkit-transform: translateZ(0);
@@ -319,46 +280,7 @@ font-size: 20px;
   }
 
 }
-.cd-vertical-nav {
-  /* lateral navigation */
-  position: fixed;
-  z-index: 1;
-  right: 3%;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: none;
-}
-.cd-vertical-nav a {
-  display: block;
-  height: 40px;
-  width: 40px;
-  color: 
-  /* image replace */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: url(../img/arrow.png) no-repeat center center;
-}
-.cd-vertical-nav a.cd-prev {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  margin-bottom: 10px;
-}
-.cd-vertical-nav a.inactive {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
-  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
-  transition: opacity 0.2s 0s, visibility 0s 0.2s;
-}
+
 @media screen and (min-width: 250px) {
   .cd-vertical-nav {
     display: block;

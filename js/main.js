@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
         actual = 1,
         animating = false;
     
-    //DOM elements
+    //get elements from the page into a jquery object, with handy variable names
     var sectionsAvailable = $('.cd-section'),
     	verticalNav = $('.cd-vertical-nav'),
     	prevArrow = verticalNav.find('a.cd-prev'),
@@ -38,8 +38,17 @@ jQuery(document).ready(function($){
 				scrollAnimation();
 				$(window).on('scroll', scrollAnimation);
 			}
+			// run the function prevSection, when the arrow is clicked
 			prevArrow.on('click', prevSection);
+			// idem
     		nextArrow.on('click', nextSection);
+    		
+    		// prevent actions when clicking on text
+    		$(".tekst").on('click', function(e) {
+    		    e.stopPropagation();
+    		});    		
+    		// go to the next step when clicking
+    		$(document).on('click', nextSection);
     		
     		$(document).on('keydown', function(event){
 				if( event.which=='40' && !nextArrow.hasClass('inactive') ) {
