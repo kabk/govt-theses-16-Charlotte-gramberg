@@ -311,7 +311,7 @@ font-size: 19px;
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 100px) {
+@media screen and (max-width: 800px) and (min-width: 50px) {
 
 .tekst-tussen {
 font-size: 2.5vw;
