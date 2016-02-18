@@ -1,0 +1,26 @@
+@media print {
+
+
+.tekst {
+    page-break-before: always;
+}
+
+@page {
+  margin: 4cm 3cm 2cm 3cm;
+
+.credits {
+display: none;
+}
+
+.wrap img {
+width:auto;
+height:100%;
+margin: 0;
+overflow: hidden;
+size: contain;
+}
+
+
+
+
+}
