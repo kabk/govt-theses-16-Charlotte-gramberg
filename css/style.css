@@ -345,8 +345,6 @@ font-family:  'Source Sans Pro', sans-serif;
 color: #000000;
 height: 80%;
 overflow-x: auto;
--webkit-column-count: 1; /* Chrome, Safari, Opera */
-column-count: 1;
 line-height: normal;
 padding-bottom:20px;
 margin:5%;
