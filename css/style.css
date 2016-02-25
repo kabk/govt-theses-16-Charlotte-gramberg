@@ -326,7 +326,7 @@ font-size: 19px;
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 50px) {
+@media screen and (max-width: 500px) {
 
 .tekst-tussen {
 font-size: 2.5vw;
@@ -344,6 +344,9 @@ font-size: 15px;
 font-family:  'Source Sans Pro', sans-serif;
 color: #000000;
 height: 80%;
+-webkit-column-count: 1; /* Chrome, Safari, Opera */
+-webkit-column-width: 350px;
+column-count: 1;
 overflow-x: auto;
 line-height: normal;
 padding-bottom:20px;
@@ -370,12 +373,4 @@ margin:5%;
 }
 }
 
-@media print {
-.wrap {
-width: 210mm;
-height:297mm;
-}
-
-
-}
 
