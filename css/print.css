@@ -1,12 +1,13 @@
+
 @media print {
 
+.cd-section {
+margin: 4cm 3cm 2cm 3cm;
+}
 
 .tekst {
     page-break-before: always;
 }
-
-@page {
-  margin: 4cm 3cm 2cm 3cm;
 
 .credits {
 display: none;
@@ -20,7 +21,11 @@ overflow: hidden;
 size: contain;
 }
 
-
+section.cd-section > div.wrap {
+    opacity: 1 !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
 
 
 }
