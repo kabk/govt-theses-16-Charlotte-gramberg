@@ -1,14 +1,6 @@
 
 @media print {
 
-.cd-section {
-margin: 4cm 3cm 2cm 3cm;
-}
-
-.tekst {
-    page-break-before: always;
-}
-
 .credits {
 display: none;
 }
@@ -25,6 +17,14 @@ section.cd-section > div.wrap {
     opacity: 1 !important;
     box-shadow: none !important;
     transform: none !important;
+    width: 210 mm important;
+    height: 297 mm important;
+    page-break-before: always !important;
+}
+
+.wrap {
+width: 210 mm important;
+height: 297 mm important;
 }
 
 

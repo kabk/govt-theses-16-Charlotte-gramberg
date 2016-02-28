@@ -84,8 +84,8 @@ width:100%;
 }
 
 .photo img {
-width: 100%;
-height: auto;
+width: auto;
+height: 100%;
 margin: 0;
 position: absolute;
 display: block;
@@ -247,39 +247,134 @@ font-size: 19px;
   background-color: #000000;
 }
 
-.cd-section:nth-of-type(3) > div {
-  background-color: #FFFFFF;
-  opacity:5;
+[data-animation="opacity"] .cd-section > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[data-animation="opacity"] .cd-section:first-of-type > div {
+  background-image: url("../img/cover-2.gif");
+}
+ 
+[data-animation="opacity"] .cd-section:nth-of-type(3) > div {
+  background-image: url("../img/Visueel protest> beelden/polish.jpg");
 }
 
-.cd-section:nth-of-type(4) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(4) > div {
+  background-image: url("../img/Visueel protest> beelden/occupy.jpg");
 }
 
-.cd-section:nth-of-type(5) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(5) > div {
+  background-image: url("../img/Visueel protest> beelden/charlie.jpg");
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.cd-section:nth-of-type(6) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(6) > div {
+  background-image: url("../img/Visueel protest> beelden/umbrella.jpg");
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.cd-section:nth-of-type(7) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(6) > div {
+  background-image: url("../img/Visueel protest> beelden/pussy.jpg");
 }
 
-.cd-section:nth-of-type(8) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(11) > div {
+  background-image: url("../img/wat/gasmasker.png");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(12) > div {
+  background-image: url("../img/wat/gezi.jpg");
 }
 
-.cd-section:nth-of-type(9) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(13) > div {
+  background-image: url("../img/wat/umbrella.jpg");
 }
 
-.cd-section:nth-of-type(10) > div {
-  background-color: #FFFFFF;
+[data-animation="opacity"] .cd-section:nth-of-type(17) > div {
+  background-image: url("../img/pools/pools2.jpg");
 }
 
+[data-animation="opacity"] .cd-section:nth-of-type(19) > div {
+  background-image: url("../img/pools/pools.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(20) > div {
+  background-image: url("../img/pools/pools4.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(22) > div {
+  background-image: url("../img/occupy/occupy.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(24) > div {
+  background-image: url("../img/occupy/gezi.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(25) > div {
+  background-image: url("../img/occupy/gezi2.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(27) > div {
+  background-image: url("../img/occupy/gezi3.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(28) > div {
+  background-image: url("../img/occupy/gezi4.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(29) > div {
+  background-image: url("../img/occupy/gezi6.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(30) > div {
+  background-image: url("../img/occupy/gezi5.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(31) > div {
+  background-image: url("../img/charlie/charlie1.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(33) > div {
+  background-image: url("../img/charlie/charlie4.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(35) > div {
+  background-image: url("../img/charlie/charlie.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(36) > div {
+  background-image: url("../img/charlie/charlie2.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(37) > div {
+  background-image: url("../img/charlie/charlie3.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(38) > div {
+  background-image: url("../img/umbrella/umbreall4.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(40) > div {
+  background-image: url("../img/umbrella/2.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(42) > div {
+  background-image: url("../img/umbrella/umbrella4 kopie.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(43) > div {
+  background-image: url("../img/umbrella/umbrella3.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(44) > div {
+  background-image: url("../img/umbrella/umbrella2.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(45) > div {
+  background-image: url("../img/umbrella/umbrella1.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(46) > div {
+  background-image: url("../img/pussy/riot2-1.png");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(47) > div {
+  background-image: url("../img/pussy/riot3.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(49) > div {
+  background-image: url("../img/pussy/riot7.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(51) > div {
+  background-image: url("../img/pussy/riot4.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(52) > div {
+  background-image: url("../img/pussy/1.jpg");
+}
+[data-animation="opacity"] .cd-section:nth-of-type(53) > div {
+  background-image: url("../img/pussy/riot.jpg");
+}
 
 
 @media screen and (min-width: 250px) {
