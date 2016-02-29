@@ -44,9 +44,19 @@ jQuery(document).ready(function($){
     		nextArrow.on('click', nextSection);
     		
     		// prevent actions when clicking on text
+    		$(".list").on('click', function(e) {
+    		    e.stopPropagation();
+    		});  
+    		// prevent actions when clicking on text
     		$(".tekst").on('click', function(e) {
     		    e.stopPropagation();
-    		});    		
+    		});   
+
+    		// prevent actions when clicking on text
+    		$(".tekst-tussen").on('click', function(e) {
+    		    e.stopPropagation();
+    		});   
+    	
     		// go to the next step when clicking
     		$(document).on('click', nextSection);
     		

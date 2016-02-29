@@ -78,6 +78,19 @@ Main Components
   background: transparent;
 }
 
+
+.list {
+position: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
+    position: fixed;
+    bottom: 15px;
+    text-align: right;
+    right: 30px;
+    width: 250px;
+    font-size: 10px;
+    line-height: 10pt;
+    padding-left: 15px;
+}
 .wrap {
 height: 100%;
 width:100%;
@@ -121,6 +134,24 @@ Font-size: 2vw;
 Font-weight: 300;
 }
 
+
+.cd-vertical-nav {
+  /* lateral navigation */
+  font-family: 'Source Sans Pro', sans-serif;
+  position: fixed;
+  z-index: 1;
+  right: 20px;
+  display: none;
+  bottom : 15px;
+}
+
+.cd-vertical-nav li {
+    text-align: right;
+    width: 250px;
+    font-size: 10px;
+  	white-space: nowrap;
+}
+
 .credits {
  -webkit-transform: rotate(90deg);
     -webkit-transform-origin: left top;
@@ -132,10 +163,9 @@ Font-weight: 300;
     -o-transform-origin: left top;
     transform: rotate(90deg);
     transform-origin: right bottom;
-
     font-family: 'Source Sans Pro', sans-serif;
     position: fixed;
-    bottom: 15px;
+    bottom: 14px;
     text-align: right;
     right: 15px;
     width: 250px;
