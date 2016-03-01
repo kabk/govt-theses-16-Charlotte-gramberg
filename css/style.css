@@ -311,8 +311,9 @@ font-size: 19px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 [data-animation="opacity"] .cd-section:first-of-type > div {
-  background-image: url("../img/cover-2.gif");
+  background-image: url("../img/Cover-2.gif");
 }
  
 [data-animation="opacity"] .cd-section:nth-of-type(3) > div {
