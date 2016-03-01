@@ -81,8 +81,8 @@ Main Components
 
 .list {
 position: fixed;
-  font-family: 'Source Sans Pro', sans-serif;
-    position: fixed;
+font-family: 'Source Sans Pro', sans-serif;
+position: fixed;
     bottom: 15px;
     text-align: right;
     right: 30px;
@@ -90,6 +90,34 @@ position: fixed;
     font-size: 10px;
     line-height: 10pt;
     padding-left: 15px;
+}
+
+.cd-vertical-nav li {
+    list-style-type: none;
+}
+
+.cd-vertical-nav a {
+text-decoration: none;
+ color: #000000;
+}
+
+.cd-vertical-nav a:hover {
+text-decoration: none;
+ color: red;
+}
+
+.credits li {
+    list-style-type: none;
+}
+
+.credits a {
+text-decoration: none;
+ color: #000000;
+}
+
+.credits a:hover {
+text-decoration: none;
+ color: red;
 }
 .wrap {
 height: 100%;
@@ -172,6 +200,7 @@ Font-weight: 300;
     font-size: 10px;
     line-height: 10pt;
     padding-left: 15px;
+    z-index: 9999;
     }
 
 .source_hover .hidden {
