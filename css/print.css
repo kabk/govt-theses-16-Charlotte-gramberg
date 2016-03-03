@@ -28,7 +28,7 @@ display:none;
 
 .tekst img {
 width: 80mm;
-margin-left:65mm;
+position: center;
 }
 
 .tekst {
@@ -60,6 +60,7 @@ display: block;
 
 .tussenkop h1{
 Font-size: 50px;
+Line-height: 1;
 font-family: 'Source Sans Pro', sans-serif;
 Font-weight: 600;
 line-height: normal;
