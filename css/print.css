@@ -1,31 +1,87 @@
 
 @media print {
 
-.credits {
-display: none;
+body {
+margin: 10mm;
 }
 
-.wrap img {
-width:auto;
-height:100%;
-margin: 0;
-overflow: hidden;
-size: contain;
+.credits {
+display:none;
+}
+
+.cd-vertical-nav {
+display:none;
+}
+
+.tekst img {
+width: 130mm;
+position: centre;
+}
+
+.tekst {
+font-size: 15px;
+font-family:  'Source Sans Pro', sans-serif;
+color: #000000;
+overflow-x: auto;
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2;
+-webkit-column-width: 350px;
+column-count: 2;
+-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+column-gap: 40px;
+line-height: normal;
+padding-bottom:20px;
+margin:5%;
+}
+
+.tussenkop {
+    page-break-inside: avoid;
+}
+
+.tussenkop h1{
+Font-size: 50px;
+font-family:  'Source Sans Pro', sans-serif;
+Font-weight: 600;
+line-height: normal;
+}
+
+.tussenkop p{
+font-family:  'Source Sans Pro', sans-serif;
+Font-size: 20px;;
+Font-weight: 300;
+}
+
+.tussenkop front{
+font-family:  'Source Sans Pro', sans-serif;
+Font-size: 20px;;
+Font-weight: 300;
+}
+
+.tekst-tussen {
+font-size: 15px;
+font-family:  'Source Sans Pro', sans-serif;
+font-weight: bold;
+line-height: normal;
+padding-bottom:20px;
+margin:5%;
+}
+
+.quote {
+padding-left: 50px;
+position: inherit;
 }
 
 section.cd-section > div.wrap {
     opacity: 1 !important;
     box-shadow: none !important;
     transform: none !important;
-    width: 210 mm important;
-    height: 297 mm important;
-    page-break-before: always !important;
+    width: 200 mm !important;
+    height: 240 mm !important;
+    display: background;
 }
 
-.wrap {
-width: 210 mm important;
-height: 297 mm important;
+section.cd-section.background {
+display:none;
 }
-
 
 }

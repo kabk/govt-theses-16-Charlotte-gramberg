@@ -230,12 +230,13 @@ Font-weight: 300;
 }
 
 .tekst-tussen {
-font-size: 1.5vw;
+font-size: 1.5px;
 font-family: 'Libre Baskerville', serif;
 color: #000000;
 height: 80%;
 overflow-x: auto;
 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2;
 -webkit-column-width: 300px;
 column-count: 2;
 -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
@@ -253,6 +254,7 @@ color: #000000;
 height: 80%;
 overflow-x: auto;
 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2;
 -webkit-column-width: 350px;
 column-count: 2;
 -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
@@ -502,6 +504,7 @@ font-size: 15px;
 font-family:  'Source Sans Pro', sans-serif;
 color: #000000;
 -webkit-column-count: 1; /* Chrome, Safari, Opera */
+-moz-column-count: 1;
 -webkit-column-width: 350px;
 column-count: 1;
 overflow-x: auto;
@@ -533,6 +536,7 @@ color: #000000;
 height: 80%;
 overflow-x: auto;
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
+-moz-column-count: 3;
 -webkit-column-width: 350px;
 column-count: 3;
 -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
