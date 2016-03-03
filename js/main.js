@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
     		nextArrow.on('click', nextSection);
     		
     		// prevent actions when clicking on text
-    		$(".cd-vertical-nav").on('click', function(e) {
+    		$(".list").on('click', function(e) {
     		    e.stopPropagation();
     		});  
     		// prevent actions when clicking on text
