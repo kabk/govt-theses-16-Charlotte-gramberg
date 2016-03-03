@@ -1,8 +1,21 @@
 
 @media print {
 
+@page {
+  margin: 1cm 2cm 2cm 2cm;
+  
+  @bottom-right {
+    content: counter(page) " of " counter(pages);
+   }
+  
+}
+
 body {
 margin: 10mm;
+}
+
+.list {
+display:none;
 }
 
 .credits {
@@ -14,8 +27,8 @@ display:none;
 }
 
 .tekst img {
-width: 130mm;
-position: centre;
+width: 80mm;
+margin-left:65mm;
 }
 
 .tekst {
@@ -31,16 +44,23 @@ column-count: 2;
 column-gap: 40px;
 line-height: normal;
 padding-bottom:20px;
-margin:5%;
+display:inline;
+}
+
+.tekst img {
+display: block;
 }
 
 .tussenkop {
     page-break-inside: avoid;
+    page-break-after: avoid;
+    margin-top: 2cm;
+    margin-bottom: 1cm;
 }
 
 .tussenkop h1{
 Font-size: 50px;
-font-family:  'Source Sans Pro', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
 Font-weight: 600;
 line-height: normal;
 }
