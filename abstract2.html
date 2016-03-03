@@ -1,10 +1,10 @@
-	<link rel="icon" href="img/icon.png">
-	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,300' rel='stylesheet' type='text/css'>
-	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Visual Protest - Sources</title>
-
-<style>
+ <link rel="icon" href="img/icon.png">
+ 	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link 		href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,300' 	rel='stylesheet' type='text/css'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Visual Protest - Abstract</title> 
+ <style>
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -40,9 +40,16 @@
   background: transparent;
 }
 
+.header {
+font-weight: bold;
+font-size: 20px;
+width: 100%
+-webkit-column-count: 1; /* Chrome, Safari, Opera */
+}
+ 
 .tekst {
-font-size: 15px;
-font-family:  'Source Sans Pro', sans-serif;
+font-size: 1.5vw;
+font-family: 'Libre Baskerville', serif;
 color: #000000;
 height: 80%;
 overflow-x: auto;
@@ -51,29 +58,50 @@ overflow-x: auto;
 column-count: 2;
 -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
 column-gap: 40px;
-line-height: 18px;
 padding-bottom:20px;
 margin:5%;
 }
 
-.tekst a {
-color: #000000;
-text-decoration: none;
-}
-
 .list {
 	position: fixed;
-	font-family: 'Source Sans Pro', sans-serif;
-	position: fixed;
+ 	font-family: 'Source Sans Pro', sans-serif;
     bottom: 5px;
     text-align: right;
     right: 30px;
+    width: 500px;
+    font-size: 10px;
+    line-height: 10pt;
+    padding-left: 15px;
+    z-index: 9999;
+    background: none;
+    line-height: 1;
+}
+
+.credits {
+ 	-webkit-transform: rotate(90deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(90deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(90deg);
+    -o-transform-origin: left top;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    position: fixed;
+    bottom: 15px;
+    text-align: right;
+    right: 15px;
     width: 250px;
     font-size: 10px;
-    line-height: normal;
+    line-height: 10pt;
+     z-index: 9999;
     padding-left: 15px;
-   	line-height: 1;
-   }
+    margin-right: 8px;
+    }
+
 
 .list li {
     list-style-type: none;
@@ -102,31 +130,22 @@ text-decoration: none;
 text-decoration: none;
  color: red;
 }
-.credits {
- 	-webkit-transform: rotate(90deg);
-    -webkit-transform-origin: left top;
-    -moz-transform: rotate(90deg);
-    -moz-transform-origin: left top;
-    -ms-transform: rotate(90deg);
-    -ms-transform-origin: left top;
-    -o-transform: rotate(90deg);
-    -o-transform-origin: left top;
-    transform: rotate(90deg);
-    transform-origin: right bottom;
-	margin-right: 8px;
-    font-family: 'Source Sans Pro', sans-serif;
-    position: fixed;
-    bottom: 15px;
-    text-align: right;
-    right: 15px;
-    width: 250px;
-    font-size: 10px;
-    line-height: 10pt;
-     z-index: 9999;
-    padding-left: 15px;
-    }
 
 @media screen and (min-width:50px and max-width:360px) {
+
+.tekst {
+font-size: 3vw;
+font-family:  'Source Sans Pro', sans-serif;
+color: #000000;
+-webkit-column-count: 1; /* Chrome, Safari, Opera */
+-moz-column-count: 1;
+-webkit-column-width: 350px;
+column-count: 1;
+overflow-x: auto;
+line-height: normal;
+padding-bottom: 0px;
+margin:5%;
+}
 
 .list {
 	position: fixed;
@@ -162,7 +181,20 @@ font-size: 15px;
 
 }
 
-</style>
+ </style>
+ 
+ 
+ <div class="list">
+	<ul>
+  <li><a href="index.html">Thesis</a></li>
+  <li> <a href="sources.html">Sources</a></li>
+  <li> <a href="pagename.html#whatever-you-want-to-call-it">Print me!</a></li>
+</ul>
+</div>
+
+<div class="credits">
+<a href="http://www.charlottegramberg.nl/">Charlotte Gramberg - 2016</a>
+</div>
 
 <div class="tekst">
 <div class= "header"> Visual Protest - Abstract </div>
@@ -175,17 +207,3 @@ The cases I did consist of graphic design in Grassroots movements. Movements tha
 of speech. And they all adopted images that could also be seen as a symbol for these goals. Images that could in itself have a very negative connotation. But instead, these mo- vements adopted these images as their identity and got hope and strength out of these symbols. Their weakness became their strength. All these movements have in common that they seem to have a philosophy of: “what doesn’t kill us makes us stronger” . They adopt the identity of that which they are fighting against.<p>
 </div>
 
-
- <div class="list">
-	<ul>
-  <li><a href="index.html">Thesis</a></li>
-  <li> <a href="abstract.html">Abstract</a></li>
-  <li> <a href="pagename.html#whatever-you-want-to-call-it">Print me!</a></li>
-</ul>
-</div>
-
-<div class="credits">
-<a href="http://www.charlottegramberg.nl/">Charlotte Gramberg - 2016</a>
-
-
-</div>
