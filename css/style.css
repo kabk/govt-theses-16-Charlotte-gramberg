@@ -146,6 +146,8 @@ width: 100%;
 .tussenkop {
 font-family: 'Source Sans Pro', sans-serif;
 margin: 10%;
+margin-top: 10%;
+font-style: italic;
 width: 80%;
 color: #FFFFFF;
 background: #000000;
@@ -153,17 +155,20 @@ background: #000000;
 
 .tussenkop h1{
 Font-size: 9vw;
-Font-weight: 600;
+text-align: center;
+vertical-align: middle;
 line-height: 1;
-margin: 10%;
-margin-bottom: 2%;
+margin-top: 15%
+margin-left: 5%;
+margin-right: 5%
+margin-bottom: 30%;
 }
 
 .tussenkop p{
 Font-size: 2vw;
 Font-weight: 300;
 margin-left: 10%;
-margin-bottom: 10%;
+margin-bottom: 40%;
 }
 
 .credits {
@@ -253,6 +258,7 @@ margin:5%;
 .quote {
 padding-left: 50px;
 position: inherit;
+font-style: italic;
 }
 
 
@@ -290,10 +296,6 @@ font-size: 19px;
   color: #FFFFFF;
 }
 
-.cd-section:nth-of-type(2) > div {
-  background-color: #000000;
-}
-
 [data-animation="opacity"] .cd-section > div {
   background-position: center center;
   background-repeat: no-repeat;
@@ -313,11 +315,12 @@ font-size: 19px;
 }
 
 [data-animation="opacity"] .cd-section:nth-of-type(5) > div {
-  background-image: url("../img/Visueel protest> beelden/charlie.jpg");
+  background-image: url("../img/img.jpg");
     background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 [data-animation="opacity"] .cd-section:nth-of-type(6) > div {
   background-image: url("../img/Visueel protest> beelden/pussy.jpg");
 }
@@ -337,6 +340,13 @@ font-size: 19px;
 
 [data-animation="opacity"] .cd-section:nth-of-type(13) > div {
   background-image: url("../img/wat/umbrella.jpg");
+}
+
+[data-animation="opacity"] .cd-section:nth-of-type(15) > div {
+  background-image: url("../img/Visueel protest> beelden/charlie.jpg");
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 [data-animation="opacity"] .cd-section:nth-of-type(17) > div {
@@ -420,6 +430,10 @@ font-size: 19px;
 }
 [data-animation="opacity"] .cd-section:nth-of-type(53) > div {
   background-image: url("../img/pussy/riot.jpg");
+}
+
+[data-animation="opacity"] .cd-section:nth-of-type(56) > div {
+  background-image: url("../img/gezi3.jpg");
 }
 
 
