@@ -154,12 +154,16 @@ background: #000000;
 .tussenkop h1{
 Font-size: 9vw;
 Font-weight: 600;
-line-height: normal;
+line-height: 1;
+margin: 10%;
+margin-bottom: 2%;
 }
 
 .tussenkop p{
 Font-size: 2vw;
 Font-weight: 300;
+margin-left: 10%;
+margin-bottom: 10%;
 }
 
 .credits {
@@ -314,18 +318,16 @@ font-size: 19px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 [data-animation="opacity"] .cd-section:nth-of-type(6) > div {
+  background-image: url("../img/Visueel protest> beelden/pussy.jpg");
+}
+
+[data-animation="opacity"] .cd-section:nth-of-type(7) > div {
   background-image: url("../img/Visueel protest> beelden/umbrella.jpg");
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-[data-animation="opacity"] .cd-section:nth-of-type(6) > div {
-  background-image: url("../img/Visueel protest> beelden/pussy.jpg");
-}
-
 [data-animation="opacity"] .cd-section:nth-of-type(11) > div {
   background-image: url("../img/wat/gasmasker.png");
 }
@@ -360,7 +362,7 @@ font-size: 19px;
   background-image: url("../img/occupy/gezi3.jpg");
 }
 [data-animation="opacity"] .cd-section:nth-of-type(28) > div {
-  background-image: url("../img/occupy/gezi4.jpg");
+  background-image: url("../img/occupy/gezi4-2.jpg");
 }
 [data-animation="opacity"] .cd-section:nth-of-type(29) > div {
   background-image: url("../img/occupy/gezi6.jpg");
@@ -378,7 +380,7 @@ font-size: 19px;
   background-image: url("../img/charlie/charlie.jpg");
 }
 [data-animation="opacity"] .cd-section:nth-of-type(36) > div {
-  background-image: url("../img/charlie/charlie2.jpg");
+  background-image: url("../img/charlie/charlie2-2.jpg");
 }
 [data-animation="opacity"] .cd-section:nth-of-type(37) > div {
   background-image: url("../img/charlie/charlie3.jpg");
@@ -396,7 +398,7 @@ font-size: 19px;
   background-image: url("../img/umbrella/umbrella3.jpg");
 }
 [data-animation="opacity"] .cd-section:nth-of-type(44) > div {
-  background-image: url("../img/umbrella/umbrella2.jpg");
+  background-image: url("../img/umbrella/umbrella2-2.jpg");
 }
 [data-animation="opacity"] .cd-section:nth-of-type(45) > div {
   background-image: url("../img/umbrella/umbrella1.jpg");
@@ -527,7 +529,7 @@ margin:5%;
 }
 
 .tussenkop h1{
-Font-size: 20vw;
+Font-size: 15vw;
 Font-weight: 600;
 line-height: normal;
 }
@@ -535,17 +537,20 @@ line-height: normal;
 .tussenkop p{
 Font-size: 5vw;
 Font-weight: 300;
+line-height: normal;
 }
 
+}
 
 @media screen and (min-width: 1300px) {
+
 .tekst {
 font-size: 15px;
 font-family:  'Source Sans Pro', sans-serif;
 color: #000000;
 height: 80%;
 overflow-x: auto;
--webkit-column-count: 3; /* Chrome, Safari, Opera */
+-webkit-column-count:3; /* Chrome, Safari, Opera */
 -moz-column-count: 3;
 -webkit-column-width: 350px;
 column-count: 3;
@@ -555,6 +560,7 @@ line-height: normal;
 padding-bottom:20px;
 margin:5%;
 }
+
 }
 
 
